@@ -8,7 +8,7 @@ namespace Studio37API.Models.DataBaseMdels
     public partial class DataModel : DbContext
     {
         public DataModel()
-            : base("name=DataModel2")
+            : base("name=DataModel1")
         {
 
             this.Configuration.LazyLoadingEnabled = false;
