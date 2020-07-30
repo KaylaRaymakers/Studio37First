@@ -33,15 +33,212 @@
         <label for="DateOfBirth" class="col-sm-1 col-form-label">Date Of Birth</label>
         <div class="col-sm-5">
             <InputDate id="DateOfBirth" class="form-control"
+                       min="1950-01-01"
                        @bind-Value="profile.DateOfBirth" />
         </div>
     </div>
     <div class="form-group row">
         <label for="Country" class="col-sm-1 col-form-label">Country</label>
         <div class="col-sm-5">
-            <InputText id="Country" class="form-control" paceholder="Select a country"
-                         @bind-Value="profile.Country" />
-            
+            <InputSelect id="Country" class="form-control"
+                         @bind-Value="profile.Country">
+                <option>Select a country</option>
+                <option>Afghanistan</option>
+                <option>Albania</option>
+                <option>Algeria</option>
+                <option>Andorra</option>
+                <option>Angola</option>
+                <option>Antigua and Barbuda</option>
+                <option>Argentina</option>
+                <option>Armenia</option>
+                <option>Australia</option>
+                <option>Austria</option>
+                <option>Azerbaijan</option>
+                <option>Bahamas</option>
+                <option>Bahrain</option>
+                <option>Bangladesh</option>
+                <option>Barbados</option>
+                <option>Belarus</option>
+                <option>Belgium</option>
+                <option>Belize</option>
+                <option>Benin</option>
+                <option>Bhutan</option>
+                <option>Bolivia</option>
+                <option>Bosnia and Herzegovina</option>
+                <option>Botswana</option>
+                <option>Brazil</option>
+                <option>Brunei</option>
+                <option>Bulgaria</option>
+                <option>Burkino Faso</option>
+                <option>Burundi</option>
+                <option>Côte d'Ivoire</option>
+                <option>Cabo Verde</option>
+                <option>Cambodia</option>
+                <option>Cameroon</option>
+                <option>Canada</option>
+                <option>Central African Republic</option>
+                <option>Chad</option>
+                <option>Chile</option>
+                <option>China</option>
+                <option>Colombia</option>
+                <option>Comoros</option>
+                <option>Congo (Congo-Brazzaville)</option>
+                <option>Congo (Democratic Republic of Congo)</option>
+                <option>Costa Rica</option>
+                <option>Croatia</option>
+                <option>Cuba</option>
+                <option>Cyprus</option>
+                <option>Czech republic</option>
+                <option>Denmark</option>
+                <option>Djibouti</option>
+                <option>Dominica</option>
+                <option>Dominican Republic</option>
+                <option>Ecuador</option>
+                <option>Egypt</option>
+                <option>El Salvador</option>
+                <option>Equatorial Guinea</option>
+                <option>Eritrea</option>
+                <option>Estonia</option>
+                <option>Eswatini (Swaziland)</option>
+                <option>Ethiopia</option>
+                <option>Fiji</option>
+                <option>Finland</option>
+                <option>France</option>
+                <option>Gabon</option>
+                <option>Gambia</option>
+                <option>Georgia</option>
+                <option>Germany</option>
+                <option>Ghana</option>
+                <option>Greece</option>
+                <option>Grenada</option>
+                <option>Guatemala</option>
+                <option>Guinea</option>
+                <option>Guinea-Bissau</option>
+                <option>Guyana</option>
+                <option>Haiti</option>
+                <option>Holy See</option>
+                <option>Honduras</option>
+                <option>Hungary</option>
+                <option>Iceland</option>
+                <option>India</option>
+                <option>Indonesia</option>
+                <option>Iran</option>
+                <option>Iraq</option>
+                <option>Ireland</option>
+                <option>Israel</option>
+                <option>Italy</option>
+                <option>Jamaica</option>
+                <option>Japan</option>
+                <option>Jordan</option>
+                <option>Kazakhstan</option>
+                <option>Kenya</option>
+                <option>Kiribati</option>
+                <option>Kuwait</option>
+                <option>Kyrgyzstan</option>
+                <option>Laos</option>
+                <option>Latvia</option>
+                <option>Lebanon</option>
+                <option>Lesotho</option>
+                <option>Liberia</option>
+                <option>Libya</option>
+                <option>Liechtenstein</option>
+                <option>Lithuania</option>
+                <option>Luxembourg</option>
+                <option>Madagascar</option>
+                <option>Malawi</option>
+                <option>Malaysia</option>
+                <option>Maldives</option>
+                <option>Mali</option>
+                <option>Malta</option>
+                <option>Marshall Islands</option>
+                <option>Mauritiana</option>
+                <option>Mauritius</option>
+                <option>Mexico</option>
+                <option>Microneisa</option>
+                <option>Moldova</option>
+                <option>Monaco</option>
+                <option>Mongolia</option>
+                <option>Montenegro</option>
+                <option>Morocco</option>
+                <option>Mozambique</option>
+                <option>Myanmar (Burma)</option>
+                <option>Namibia</option>
+                <option>Nauru</option>
+                <option>Nepal</option>
+                <option>Netherlands</option>
+                <option>New Zealand</option>
+                <option>Nicaragua</option>
+                <option>Niger</option>
+                <option>Nigeria</option>
+                <option>North Korea</option>
+                <option>North Macedonia</option>
+                <option>Norway</option>
+                <option>Oman</option>
+                <option>Pakistan</option>
+                <option>Palau</option>
+                <option>Palestine State</option>
+                <option>Panama</option>
+                <option>Papua New Guinea</option>
+                <option>Paraguay</option>
+                <option>Peru</option>
+                <option>Phillipines</option>
+                <option>Poland</option>
+                <option>Portugal</option>
+                <option>Qatar</option>
+                <option>Romania</option>
+                <option>Russia</option>
+                <option>Rwanda</option>
+                <option>Saint Kitts and Nevis</option>
+                <option>Saint Lucia</option>
+                <option>Saint Vincemt and the Grenadines</option>
+                <option>Samoa</option>
+                <option>San Marino</option>
+                <option>Sao Tome and principe</option>
+                <option>Saudi Arabia</option>
+                <option>Senegal</option>
+                <option>Serbia</option>
+                <option>Seychelles</option>
+                <option>Sierra Leone</option>
+                <option>Singapore</option>
+                <option>Slovakia</option>
+                <option>Slovenia</option>
+                <option>Solomon Islands</option>
+                <option>Somalia</option>
+                <option>South Africa</option>
+                <option>South Korea</option>
+                <option>South Sudan</option>
+                <option>Spain</option>
+                <option>Sri Lanka</option>
+                <option>Sudan</option>
+                <option>Suriname</option>
+                <option>Sweden</option>
+                <option>Switzerland</option>
+                <option>Syria</option>
+                <option>Tajikistan</option>
+                <option>Tanzania</option>
+                <option>Thailand</option>
+                <option>Timor-Leste</option>
+                <option>Togo</option>
+                <option>Tonga</option>
+                <option>Trinidad and Tobago</option>
+                <option>Tunisia</option>
+                <option>Turkey</option>
+                <option>Turkmenistan</option>
+                <option>Tuvalu</option>
+                <option>Uganda</option>
+                <option>Ukraine</option>
+                <option>United Arab Emirates</option>
+                <option>United Kingdom</option>
+                <option>United states of America</option>
+                <option>Uruguay</option>
+                <option>Uzbekistan</option>
+                <option>Vanautu</option>
+                <option>Venezuela</option>
+                <option>Vietnam</option>
+                <option>Yemen</option>
+                <option>Zimbabwe</option>
+            </InputSelect>
+
         </div>
     </div>
     <div class="form-group row">
@@ -49,36 +246,46 @@
         <div class="col-sm-5">
             <InputTextArea id="Bio" class="form-control" placeholder="Write something about yourself"
                            @bind-Value="profile.Bio" />
-            
+
         </div>
     </div>
-    @*<div class="form-group row">
-        <label for="PhoneNumber" class="col-sm-2 col-form-label">Phone Number</label>
-        <div class="col-sm-10">
-            <InputText id="PhoneNumber" class="form-control"
-                       @bind-Value="profile.PhoneNumber" />
-        </div>
-    </div>*@
+
     <div class="form-group row">
         <label for="Website" class="col-sm-1 col-form-label">Website</label>
         <div class="col-sm-5">
             <InputText id="Website" class="form-control" placeholder="Link your Website"
                        @bind-Value="profile.Website" />
+
+        </div>
+    </div>
+    @*<div class="form-group row">
+            <label for="PhoneNumber" class="col-sm-2 col-form-label">Phone Number</label>
+            <div class="col-sm-10">
+                <InputText id="PhoneNumber" class="form-control"
+                           @bind-Value="profile.PhoneNumber" />
+            </div>
+        </div>*@
+
+
+    <div class="form-group row">
+        <label for="ProfilePhoto" class="col-sm-1 col-form-label">Profile Photo</label>
+        <div class="col-sm-5">
+            <InputText id="ProfilePhoto" class="form-control"
+                       @bind-Value="profile.ProfilePhoto" />
         </div>
     </div>
 
-    <div>
-        <label for="ProfilePhoto">Profile Photo: </label>
-        <input type="text" @bind="profile.ProfilePhoto" />
+    <div class="form-group row">
+        <label for="WallPhoto" class="col-sm-1 col-form-label">Wall Photo</label>
+        <div class="col-sm-5">
+            <InputText id="WallPhoto" class="form-control"
+                       @bind-Value="profile.WallPhoto" />
+        </div>
     </div>
 
-    <div>
-        <label for="WallPhoto">Wall Photo: </label>
-        <input type="text" @bind="profile.WallPhoto" />
-    </div>
-
-    <button type="submit">Submit</button>
+    <button class="class=" btn btn-primary"" type="submit">Submit</button>
 </EditForm>
+
     @code {
 
         Profile profile = new Profile();
@@ -87,6 +294,7 @@
         {
             await Http.PostAsJsonAsync<Profile>("Profile", profile);
         }
+
     }
 }
 catch (Exception e)
